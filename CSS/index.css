@@ -1,0 +1,216 @@
+/* Estilo del encabezado */
+header {
+    background-color: #0a0a0a;
+
+ /* Cambia el color de fondo a dorado */
+    padding: 2px 0; /* Altura del borde superior */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#header .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-content .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .logo img {
+    width: 66px;
+    height: auto;
+    margin-right: 3px; 
+}
+
+.header-content h1 {
+    color: #f9c024;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #a98416; /* Ajusta los valores según tus preferencias */
+}
+
+header a {
+    color: #ffffff; /* Cambiar al color que desees */
+    font-size: 20px;
+    margin-right: 15px; /* Agregar un margen derecho para separar los enlaces */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.main {
+    display: flex;
+}
+
+.text-column {
+    background-color: black;
+    flex: 3; /* Esto hace que la columna de texto ocupe el mismo espacio que el video */
+    color: white; /* Texto en color blanco */
+    padding: 20px; /* Agregar un espacio entre el texto y el borde de la columna */
+}
+
+.image-column {
+    flex: 4;
+    /* Mantén este estilo si el video y la columna de texto deben ocupar el mismo espacio horizontalmente */
+}
+
+.video-content {
+    background: linear-gradient(45deg, #FFD700, #FFA500, #FF6347); /* Aplica un degradado de colores */
+    color: transparent; /* Hace que el texto sea transparente */
+    -webkit-background-clip: text; /* Permite que el fondo del degradado solo se muestre detrás del texto en navegadores webkit (como Chrome y Safari) */
+    background-clip: text; /* Permite que el fondo del degradado solo se muestre detrás del texto en otros navegadores */
+    font-size: 4.5em;
+    letter-spacing: 2px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, p {
+    margin: 0;
+}
+
+
+/*botnones inf*/
+#but2 {
+    --color: #f9c024;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #000000;
+   }
+   
+   #but2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   #but2:hover {
+    color: #fffbfb;
+   }
+   
+   #but2:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   #but2:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   #but2:active:before {
+    background:  #f9c024;
+    transition: background 0s;
+   }
+#but2 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+/* Estilo de la sección de características */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #f2f0f0d8;
+    margin-top: 20px; /* Incrementar el valor para más espacio */
+}
+
+.feature {
+    text-align: center;
+}
+
+
+
+
+/* Estilos para los botones */
+
+
+/* Estilo del pie de página */
+
+h1 {
+    color: #f9c024;
+    font-size: 1rem; /* Cambia el tamaño del texto según tus preferencias */
+    text-shadow: 2px 2px 4px #a98416;
+}
+
+/* Cambiar el estilo de los enlaces en el footer */
+footer a {
+    color: #f9c024c4; /* Cambiar al color que desees */
+    text-decoration: underline; /* Subrayar el texto */
+    margin-right: 10px; /* Agregar un margen derecho para separar los enlaces */
+}
+
+
+footer {
+    background-color: #000000;
+     color: #fff;
+     text-align: center;
+     padding: 20px 0;
+     margin-top: -10px;
+ }
+
+ /* Estilo predeterminado para pantallas grandes */
+.elemento {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  /* Estilo para pantallas más pequeñas, como tabletas */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Cambiar a un diseño de columna en pantallas más pequeñas */
+        align-items: center; /* Centrar elementos en pantallas más pequeñas */
+    }
+
+    .feature {
+        margin-bottom: 20px; /* Agregar espacio entre elementos en pantallas más pequeñas */
+    }
+
+    .elemento {
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+/* Estilo para pantallas muy pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    .elemento {
+        font-size: 14px;
+        margin: 3px;
+    }
+}

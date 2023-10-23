@@ -1,0 +1,69 @@
+.logo h2 {
+    color: #ffffff; /* Color del texto "Centro de ayuda" */
+    font-size: 20px; /* Tamaño del texto "Centro de ayuda" */
+    margin-left: 15px; /* Margen izquierdo para separar el texto del nombre del sitio */
+}
+
+
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+main h5{
+    font-size: 40px;
+}
+main {
+    /*text-align: center; /* Centrar el texto horizontalmente */
+    padding: 7px 10px 10px 10px; /* Espaciado 10px arriba, 30px a la derecha, 10px abajo, 15px a la izquierda */
+    font-size: 18px; /* Tamaño de letra */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #f2f0f0d8;
+    margin-top: 20px; /* Incrementar el valor para más espacio */
+}
+
+.feature {
+    text-align: center;
+}
+/* Estilo predeterminado para pantallas grandes */
+.elemento {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+ 
+ /* Estilo para pantallas más pequeñas, como tabletas */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Cambiar a un diseño de columna en pantallas más pequeñas */
+        align-items: center; /* Centrar elementos en pantallas más pequeñas */
+    }
+
+    .feature {
+        margin-bottom: 20px; /* Agregar espacio entre elementos en pantallas más pequeñas */
+    }
+
+    .elemento {
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+/* Estilo para pantallas muy pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    .elemento {
+        font-size: 14px;
+        margin: 3px;
+    }
+}
