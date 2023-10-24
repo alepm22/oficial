@@ -40,13 +40,13 @@
 
 
 .imagenYtexto{
-  width: 60%;
+  width: 20%;
   float: right;
   margin-right: 10px;
 }
 
 .imagenYtexto img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -63,8 +63,8 @@
   
 }
 .pf {
-  width: 900px;
-  height: 400px;
+  width: 100px;
+  height: 100px;
 }
 
 .pff {
